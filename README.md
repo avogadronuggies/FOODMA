@@ -11,15 +11,9 @@ FOODMA is a web application designed to help users discover and explore recipes 
 - **Modern Technologies:** Built with HTML, CSS, and JavaScript, and utilizes APIs for dynamic content.
 
 ## Screenshots
-
-![Screenshot 1]![image](https://github.com/avogadronuggies/FOODMA/assets/94660343/79105013-d8f7-4e61-b465-2cbf469d2261)
-
-
-![Screenshot 2]![image](https://github.com/avogadronuggies/FOODMA/assets/94660343/b97c4ea3-9dbf-48d3-97ba-fcdc4aea8698)
-
-
-![Screenshot 3]![image](https://github.com/avogadronuggies/FOODMA/assets/94660343/8891b4c5-72cf-4dcb-aa25-60aa2a4b3f7c)
-
+![image](https://github.com/avogadronuggies/FOODMA/assets/94660343/79105013-d8f7-4e61-b465-2cbf469d2261) 
+![image](https://github.com/avogadronuggies/FOODMA/assets/94660343/b97c4ea3-9dbf-48d3-97ba-fcdc4aea8698) 
+![image](https://github.com/avogadronuggies/FOODMA/assets/94660343/8891b4c5-72cf-4dcb-aa25-60aa2a4b3f7c)
 
 ## Installation
 
@@ -37,7 +31,6 @@ To run FOODMA locally, follow these steps:
 ## Contributing
 
 Contributions are welcome! Fork the repository and submit a pull request with your changes.
-
 
 ## Contact
 
