@@ -1,6 +1,7 @@
 # FOODMA Recipe Provider Application
 
 FOODMA is a web application designed to help users discover and explore recipes based on their preferences and dietary needs. It leverages the Edamam API for recipe search functionality and the Spoonacular API for detailed recipe instructions, aiming to provide a comprehensive platform for culinary enthusiasts.
+LINK:[https://foodma.vercel.app](https://foodma.vercel.app/index.html)
 
 ## Features
 
