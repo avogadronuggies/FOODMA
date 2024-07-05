@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Detail | FoodMa</title>
+    <link rel="shortcut icon" href="/images/food.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/theme.js" type="module" defer></script>
+    <script src="js/global.js" type="module" defer></script>
+    <script src="js/detail.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="header" data-header>
+      <a href="index.html" class="logo">
+        <img
+          src="images/FOODMAlight.svg"
+          width="160"
+          height="24"
+          class="logo-light"
+          alt="FoodMaster Light Logo"
+        />
+        <img
+          src="images/FOODMAdark.svg"
+          width="160"
+          height="24"
+          class="logo-dark"
+          alt="FoodMaster Dark Logo"
+        />
+      </a>
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li>
+            <a href="/" class="navbar-link title-small has-state active"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="recipe.html" class="navbar-link title-small has-state"
+              >Recipes</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button
+        class="icon-btn theme-switch has-state"
+        aria-pressed="false"
+        aria-label="Toggle light and dark theme"
+        data-theme-btn
+      >
+        <span class="material-symbols-outlined light-icon" aria-hidden="true"
+          >light_mode</span
+        >
+        <span class="material-symbols-outlined dark-icon" aria-hidden="true"
+          >dark_mode</span
+        >
+      </button>
+
+      <a href="saved-recipe.html" class="btn btn-primary">
+        <span class="material-symbols-outlined" aria-hidden="true">book</span>
+        <span class="span">Saved Recipes</span>
+      </a>
+    </header>
+
+    <!-- MOBILE NAVBAR -->
+    <nav class="mobile-nav" aria-label="primary">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="recipe.html" class="nav-link">
+            <span class="item-icon">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >dinner_dining</span
+              >
+            </span>
+            <span class="label-medium">Recipes</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" aria-current="true">
+            <span class="item-icon">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >house</span
+              >
+            </span>
+            <span class="label-medium">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="saved-recipe.html" class="nav-link">
+            <span class="item-icon">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >book</span
+              >
+            </span>
+            <span class="label-medium">Saved</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="recipe-detail">
+        <figure id="recipe-image" class="img-holder">
+          <img src="" alt="Recipe Image" class="img-small" />
+        </figure>
+        <div class="detail-content">
+          <div class="title-wrapper">
+            <h1 id="recipe-title" class="display-small">Untitled</h1>
+            <button id="save-button" class="btn btn-secondary">
+              <span
+                class="material-symbols-outlined bookmark-add"
+                aria-hidden="true"
+                >bookmark_add</span
+              >
+              <span id="save-button-text" class="label-large">Save</span>
+            </button>
+          </div>
+          <div id="recipe-author" class="detail-author label-large">
+            <span class="span">by</span> Unknown
+          </div>
+          <div id="recipe-stats" class="detail-stats">
+            <div class="stats-item">
+              <span id="ingredients-count" class="display-medium">0</span>
+              <span class="label-medium">Ingredients</span>
+            </div>
+            <div class="stats-item">
+              <span id="cooking-time" class="display-medium">0 min</span>
+              <span class="label-medium">Time</span>
+            </div>
+            <div class="stats-item">
+              <span id="calories" class="display-medium">0</span>
+              <span class="label-medium">Calories</span>
+            </div>
+          </div>
+          <div id="diet-labels" class="label-medium tags"></div>
+          <div id="cuisine-type" class="label-medium tags"></div>
+          <div id="dish-type" class="label-medium tags"></div>
+          <h2 class="title-medium ingr-title">Ingredients</h2>
+          <ul id="recipe-ingredients" class="body-large ingr-list"></ul>
+          <h2 class="label-large instr-title">Instructions</h2>
+          <div id="recipe-instructions" class="display-medium instr-text">
+            No specific instructions available.
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- <footer class="footer">
+      <p class="copyright body-medium">Copyright 2024</p>
+      <a href="index.html" class="logo">
+        <img
+          src="/images/FOODMAlight.svg"
+          width="160"
+          height="24"
+          class="logo-light"
+          alt="FoodMa Light Logo"
+        />
+        <img
+          src="/images/FOODMAdark.svg"
+          width="160"
+          height="24"
+          class="logo-dark"
+          alt="FoodMa Dark Logo"
+        />
+      </a>
+      <a href="https://www.edamam.com/" target="_blank" class="edaman">
+        <img
+          src="/images/edamam.svg"
+          width="200"
+          height="40"
+          loading="lazy"
+          alt="Free Recipe API"
+        />
+      </a>
+    </footer> -->
+  </body>
+</html>
