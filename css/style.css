@@ -1776,6 +1776,4 @@ RECIPE-SLIDER
 
 main {
     flex: 1;
-    padding-top: var(--header-height);
-    /* Adjust according to navbar height */
 }
